@@ -56,7 +56,7 @@ var PushNotifications = (function () {
 
 
 function onNotificationGcm(e) {
-    alert('onNotificationGcm regID = ' + e.regid)
+    console.log('onNotificationGcm: ' + e)
 
     $("#app-status-ul").append('<li>EVENT -> RECEIVED:' + e.event + '</li>');
 
