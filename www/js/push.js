@@ -8,7 +8,7 @@ var PushNotifications = (function () {
             console.log(device);
             this.pushNotification.register(this.successHandler, this.errorHandler, {
                 "senderID": "750800674534",
-                "ecb": "onNotificationGcm"
+                "ecb": this.onNotificationGcm
             });
         } else {
             this.pushNotification.register(this.tokenHandler, this.errorHandler, {
