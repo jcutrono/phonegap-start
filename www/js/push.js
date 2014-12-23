@@ -6,7 +6,7 @@ var PushNotifications = (function () {
     PushNotifications.prototype.setup = function () {
         if (device.platform == 'android' || device.platform == 'Android') {
             this.pushNotification.register(this.successHandler, this.errorHandler, {
-                "senderID": "750800674534",
+                "senderID": "750800674534aa",
                 "ecb": "onNotificationGcm"
             });
         } else {
