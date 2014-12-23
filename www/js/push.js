@@ -78,8 +78,7 @@ function onNotificationGcm(e) {
                 $("#app-status-ul").append('<li>--INLINE NOTIFICATION--' + '</li>');
 
                 // if the notification contains a soundname, play it.
-                var my_media = new Media("/android_asset/www/" + e.soundname);
-                my_media.play();
+                alert("Ultimate + GO + Push Notifications == AWESOME" + e.payload.message)
             } else {
                 if (e.coldstart) {
                     $("#app-status-ul").append('<li>--COLDSTART NOTIFICATION--' + '</li>');
