@@ -56,7 +56,7 @@ var PushNotifications = (function () {
 
 
 function onNotificationGcm(e) {
-    console.log('onNotificationGcm: ' + e)
+    console.log('onNotificationGcm: ' + JSON.stringify(e))
 
     $("#app-status-ul").append('<li>EVENT -> RECEIVED:' + e.event + '</li>');
 
