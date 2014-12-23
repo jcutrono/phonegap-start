@@ -20,38 +20,46 @@
     under the License.
 -->
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="msapplication-tap-highlight" content="no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="msapplication-tap-highlight" content="no"/>
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <title>Hello World</title>
+</head>
+<body>
+
+    <div class="app">
+        <h1>PhoneGap</h1>
+
+        <div id="deviceready" class="blink">
+            <p class="event listening">Connecting to Device</p>
+
+            <p class="event received">Device is Ready</p>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-        
-        <script type="text/javascript" src="js/push.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-        
-        <div id="home">
-    <div id="app-status-div">
-        <ul id="app-status-ul">
-            <li>Cordova PushNotification Plugin Demo</li>
-        </ul>
     </div>
-</div>
-    </body>
+
+    <!-- Libs -->
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+
+    <!-- Custom -->
+    <script type="text/javascript" src="js/push.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+                app.initialize();
+
+    </script>
+
+    <div id="home">
+        <div id="app-status-div">
+            <ul id="app-status-ul">
+                <li>Cordova PushNotification Plugin Demo</li>
+            </ul>
+        </div>
+    </div>
+</body>
 </html>
