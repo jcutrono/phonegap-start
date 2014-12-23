@@ -51,6 +51,8 @@ var PushNotifications = (function () {
 
     // Android
     PushNotifications.prototype.onNotificationGcm = function (e) {
+        alert('onNotificationGcm regID = ' + e.regid)
+
         $("#app-status-ul").append('<li>EVENT -> RECEIVED:' + e.event + '</li>');
 
         switch (e.event) {
