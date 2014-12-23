@@ -5,6 +5,7 @@ var PushNotifications = (function () {
     }
     PushNotifications.prototype.setup = function () {
         if (device.platform == 'android' || device.platform == 'Android') {
+            console.log(device);
             this.pushNotification.register(this.successHandler, this.errorHandler, {
                 "senderID": "750800674534",
                 "ecb": "onNotificationGcm"

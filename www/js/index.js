@@ -36,6 +36,7 @@ var app = {
         app.receivedEvent('deviceready');
         var pushNotification = window.plugins.pushNotification;
         alert("push " + pushNotification);
+        console.log("test log" + pushNotification);
         var push = new PushNotifications(pushNotification);
     },
     
